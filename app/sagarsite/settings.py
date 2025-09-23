@@ -29,7 +29,7 @@ SECRET_KEY = 'django-insecure-jplmi_8or5c8)6vsz#3_gygd=i^lt%&(5lb-!r($aw(o)f#!c!
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["192.168.79.158"]
 
 
 # Application definition
@@ -96,7 +96,7 @@ WSGI_APPLICATION = 'sagarsite.wsgi.application'
 DATABASES = {
     "default": {
         "ENGINE": os.getenv('DATABASE_ENGINE'),
-        "NAME": os.getenv('DATABASE__NAME'),
+        "NAME": os.getenv('DATABASE_NAME'),
         "USER": os.getenv('DATABASE_USER'),
         "PASSWORD": os.getenv('DATABASE_PASSWORD'),
         "HOST": os.getenv('DATABASE_HOST'),
